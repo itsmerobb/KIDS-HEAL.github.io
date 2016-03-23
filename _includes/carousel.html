@@ -1,0 +1,37 @@
+<div id="{{ include.id }}" class="carousel slide" data-ride="carousel" data-interval="false">
+
+  <div class="carousel-inner" role="listbox">
+
+    {% for x in site.data.art.skeletons %}
+
+    {% assign i = forloop.index0 | modulo:6 %}
+
+    {% if i == 0 %}
+    <div class="item {% if forloop.first %} active {% endif %}">
+      <div class="row">
+    {% endif %}
+
+    <div class="col-md-2 inner-item">
+      <a href="#">
+        <img src="{{ x.url }}" alt="...">
+      </a>
+    </div>
+
+    {% if i == 5 or forloop.last %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#{{ include.id }}" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#{{ include.id }}" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

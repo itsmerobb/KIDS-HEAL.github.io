@@ -252,9 +252,23 @@ address {
     min-height: 70px;
 }
 
-.carousel img {
-  width: 100%;
+.carousel {
+    background-color: #ff3333;
+    padding: 20px;
 }
+
+.carousel img {
+    width: 100%;
+    margin-top: 0;
+}
+
+/* .carousel .inner-item { */
+/*     transition: all .2s ease-in-out; */
+/* } */
+
+/* .carousel .inner-item:hover { */
+/*     transform: scale(2); */
+/* } */
 
 /*
 // Import partials from `sass_dir` (defaults to `_sass`)

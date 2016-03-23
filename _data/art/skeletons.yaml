@@ -1,8 +1,13 @@
 ---
-skeletons:
-  - url: img/skeletons/skeleton-1.jpg
-  - url: img/skeletons/skeleton-2.jpg
-  - url: img/skeletons/skeleton-3.jpg
-  - url: img/skeletons/skeleton-4.jpg
-  - url: img/skeletons/skeleton-5.jpg
+- url: img/art/skeletons/skeleton-1.jpg
+- url: img/art/skeletons/skeleton-2.jpg
+- url: img/art/skeletons/skeleton-3.jpg
+- url: img/art/skeletons/skeleton-4.jpg
+- url: img/art/skeletons/skeleton-5.jpg
+
+- url: img/art/skeletons/skeleton-1.jpg
+- url: img/art/skeletons/skeleton-2.jpg
+- url: img/art/skeletons/skeleton-3.jpg
+- url: img/art/skeletons/skeleton-4.jpg
+- url: img/art/skeletons/skeleton-5.jpg
 ...
