@@ -1,0 +1,49 @@
+---
+- ep    : 1
+  title : Van Gogh + Blood Cancer + Sun Safety + Watermelons + Color Theory
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/137806259
+
+- ep    : 2
+  title : Da Vinci + Yogurt + Bones + Skeleton Figure Drawings
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/111579904
+
+- ep    : 3
+  title : Calder + Wire + Drawing + Grapes + Diabetes
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/145357254
+
+- ep    : 4
+  title : Picasso + Tamales + Mental Health & 9-11 Painting + MultiMedia Sculpture
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/113999360
+
+- ep    : 5
+  title : Snowflakes + Ernst Haeckel + Plankton + Tangerines + Teeth
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/152502413
+
+- ep    : 6
+  title : Keith Haring + Carrots + Heart Health
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/153825274
+
+- ep    : 7
+  title : "Cave Paintings + Digestion + World History According to: Jerky"
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/157199635
+
+- ep    : 8
+  title : Magritte + Strawberries + Eyes + Himalayas
+  width : 500
+  height: 281
+  url   : https://player.vimeo.com/video/133685157
+...
