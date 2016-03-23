@@ -4,46 +4,54 @@
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/137806259
+  thumb : img/film_thumbs/ep1.jpg
 
 - ep    : 2
   title : Da Vinci + Yogurt + Bones + Skeleton Figure Drawings
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/111579904
+  thumb : img/film_thumbs/ep2.jpg
 
 - ep    : 3
   title : Calder + Wire + Drawing + Grapes + Diabetes
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/145357254
+  thumb : img/film_thumbs/ep3.jpg
 
 - ep    : 4
   title : Picasso + Tamales + Mental Health & 9-11 Painting + MultiMedia Sculpture
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/113999360
+  thumb : img/film_thumbs/ep4.jpg
 
 - ep    : 5
   title : Snowflakes + Ernst Haeckel + Plankton + Tangerines + Teeth
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/152502413
+  thumb : img/film_thumbs/ep5.jpg
 
 - ep    : 6
   title : Keith Haring + Carrots + Heart Health
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/153825274
+  thumb : img/film_thumbs/ep6.jpg
 
 - ep    : 7
   title : "Cave Paintings + Digestion + World History According to: Jerky"
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/157199635
+  thumb : img/film_thumbs/ep7.jpg
 
 - ep    : 8
   title : Magritte + Strawberries + Eyes + Himalayas
   width : 500
   height: 281
   url   : https://player.vimeo.com/video/133685157
+  thumb : img/film_thumbs/ep8.jpg
 ...
