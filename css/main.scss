@@ -3,6 +3,7 @@
 ---
 @charset "utf-8";
 
+$black-color  : #000000;
 $white-color  : #ffffff;
 $green-color  : #8cc63f;
 $blue-color   : #00b4f1;
@@ -12,29 +13,32 @@ $pink-color   : #f286af;
 $orange-color : #f58220;
 
 $white-color-light  : lighten($white-color,  40%);
-$white-color-dark   :  darken($white-color,  25%);
+$white-color-dark   :  darken($white-color,  5%);
 $green-color-light  : lighten($green-color,  40%);
-$green-color-dark   :  darken($green-color,  25%);
+$green-color-dark   :  darken($green-color,  5%);
 $blue-color-light   : lighten($blue-color,   40%);
-$blue-color-dark    :  darken($blue-color,   25%);
+$blue-color-dark    :  darken($blue-color,   5%);
 $yellow-color-light : lighten($yellow-color, 40%);
-$yellow-color-dark  :  darken($yellow-color, 25%);
+$yellow-color-dark  :  darken($yellow-color, 5%);
 $purple-color-light : lighten($purple-color, 40%);
-$purple-color-dark  :  darken($purple-color, 25%);
-$pink-color-light    : lighten($pink-color,    40%);
-$pink-color-dark     :  darken($pink-color,    25%);
+$purple-color-dark  :  darken($purple-color, 5%);
+$pink-color-light    : lighten($pink-color,  40%);
+$pink-color-dark     :  darken($pink-color,  5%);
 $orange-color-light : lighten($orange-color, 40%);
-$orange-color-dark  :  darken($orange-color, 25%);
+$orange-color-dark  :  darken($orange-color, 5%);
 
 body {
-  background-color: $yellow-color;
+  background-color: $green-color;
   color: $white-color;
   font-size: 16pt;
   font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 1px 1px rgba(0, 0, 0, .4);
 }
 
 .container {
   background-color: $blue-color;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .35);
+//  border: 2px solid $yellow-color;
 }
 
 .navbar-brand>img {
@@ -62,13 +66,17 @@ body {
 .navbar {
   min-height:60px !important;
   border: 0;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -25px;
+  margin-right: -25px;
+  //  border-bottom: 2px solid $green-color;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .navbar-custom {
   background-color: $yellow-color;
-  border-color: $white-color;
+  border-color: $green-color;
 }
 .navbar-custom .navbar-brand {
   color: $purple-color;
@@ -162,8 +170,10 @@ body {
 }
 
 .section {
-    padding-bottom: 20px;
-    border-bottom: 1px dashed $white-color-dark;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed $white-color-dark;
 }
 
 .section h2 {
@@ -171,6 +181,7 @@ body {
   font-size: 28pt;
   color: $yellow-color;
   text-transform: uppercase;
+  text-shadow: 2px 2px rgba(0, 0, 0, .4);
 }
 
 .section h3 {
@@ -178,14 +189,15 @@ body {
   font-size: 20pt;
   text-transform: capitalize;
   margin-left: 15px;
+  text-shadow: 1px 1px rgba(0, 0, 0, .4);
 }
 
 .section p {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .section img {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .supporters li {
@@ -195,16 +207,20 @@ body {
 }
 
 .section .table-responsive {
-    font-size: 14pt;
-    padding: 10px 20px;
+  font-size: 14pt;
+  padding: 10px 20px;
 }
 
 .section .table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: #55b4f1;
+  background-color: $blue-color-dark;
 }
 
 .section table thead th {
   text-align: right;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border-top: 1px solid $blue-color-light;
 }
 
 .section table td {
@@ -229,41 +245,42 @@ body {
 }
 
 .donate {
-    margin-left: 15px;
-    margin-right: 15px;
-    min-height: 200px;
-    background-color: #ffffcc;
-    background-image: none;
-    color: #555555;
+  margin-left: 15px;
+  margin-right: 15px;
+  min-height: 200px;
+  background-color: $blue-color-light;
+  background-image: none;
+  color: $black-color;
+  border-color: $blue-color-dark;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .25) inset;
 }
 
 .donate-btn {
-    padding: 10px 0 0 120px;
-
+  padding: 10px 0 0 120px;
 }
 
 address {
-    width: 200px;
+  width: 200px;
 }
 
 .site-footer {
-    padding: 20px;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: -30px;
-    background-color: $yellow-color;
-    color: $purple-color;
-    min-height: 70px;
+  padding: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px;
+  background-color: $yellow-color;
+  color: $purple-color;
+  min-height: 70px;
 }
 
 .carousel {
-    background-color: $pink-color;
-    padding: 20px;
+  background-color: $pink-color;
+  padding: 20px;
 }
 
 .carousel img {
-    width: 100%;
-    margin-top: 0;
+  width: 100%;
+  margin-top: 0;
 }
 
 /* .carousel .inner-item { */
