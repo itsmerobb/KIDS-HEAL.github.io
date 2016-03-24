@@ -2,9 +2,17 @@
 
   <div class="carousel-inner" role="listbox">
 
-    {% for x in site.data.art.skeletons %}
+    {% comment %}
 
-    {% assign i = forloop.index0 | modulo:6 %}
+    The following could be greatly simplified with a partition operator.
+
+    {% endcomment %}
+
+    {% assign n = include.count | minus:1 %}
+
+    {% for x in include.data %}
+
+    {% assign i = forloop.index0 | modulo:include.count %}
 
     {% if i == 0 %}
     <div class="item {% if forloop.first %} active {% endif %}">
@@ -17,7 +25,7 @@
       </a>
     </div>
 
-    {% if i == 5 or forloop.last %}
+    {% if i == n or forloop.last %}
       </div>
     </div>
     {% endif %}
