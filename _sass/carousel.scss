@@ -1,20 +1,13 @@
-.carousel-outer {
-
-}
-
-.carousel-outer title {
-
-}
 
 .slick-carousel {
-  box-shadow: 0 0 20px rgba(0, 0, 0, .3) inset;
+  border: 1px solid $blue-color-dark;
+  box-shadow: 0 0 10px rgba(0, 0, 128, .8) inset;
 }
 
 .slick-carousel a {
-  padding: 2px;
   background-color: $black-color;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-  margin: 20px 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 255, .6);
+  margin: 10px 10px;
 }
 
 .slick-carousel img {
@@ -24,16 +17,48 @@
 }
 
 .slick-dots {
+  width: auto;
+  bottom: auto;
+  top: -45px;
+  right: 0;
+}
 
+.slick-dots li button:before {
+  padding: 0;
+  font-size: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
+  opacity: 1;
 }
 
 .slick-dots li button:before {
   color: #fff !important;
+  opacity: .5;
 }
 
-/* .slick-prev:before, */
-/* .slick-next:before { */
-/*   font-size: 50px; */
-/*   width: 50px; */
-/*   height: 50px; */
-/* } */
+.slick-prev,
+.slick-next {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  opacity: .8;
+  color: $white-color;
+  text-shadow: 1px 1px rgba(0, 0, 128, .4);
+}
