@@ -1,52 +1,55 @@
 ---
-presents
+title : "BASQUE’ANESE #1"
+desc  : (Half Basque, half Japanese meal. Take one.)
+chef  :
+  name: Ryan Roadhouse
+  desc: Owner/chef Nodoguro, Portland Resturant of the Year 2015
+other1 : Patxi Etxaniz – serial venture philanthropist/artist/cook
+other2 : "Kitchen Cru – Portland's #1 culinary arts incubator"
+courses:
+  - title: Pintxos
+    items:
+    - Salmon Roe with soy, Yuzu skin and butter on baquette
+    - Pyrennes spicy garlic mushroom melody in endive wrap
+    - Oyster, ginger blossom and horseradish bits
+    - Jamon Iberico
+    - Smoked Salmon, pickled mushroom and egg yolk
+    - Cava Rosat AVINYO Brut Reserva
 
-BASQUE’ANESE #1
-(Half Basque, half Japanese meal. Take one.)
-Ryan Roadhouse
-Owner/chef Nodoguro, Portland Resturant of the Year 2015
-Patxi Etxaniz – serial venture philanthropist/artist/cook
-Kitchen Cru – Portlands #1 culinary arts incubator
+  - title: First Seating
+    items:
+    - Salad of angulas with seaweed and ginger on bed of nappa cabbage
+    - Usuzukuri Flounder, poached monkfish liver, bok choy and citrus
+    - Bacalao kasuzuke with preserved chestnut miso and braised chard
+    - Basque cider
+    - Garbanzos, diced mortzilla stir fried with golden raisins and toasted almond
+    - Basque Skatewing with grilled onion, peppers and smoked sasify
+    - Fremin Etxaniz Txacoli 2014
 
-- title: Pintxos
-  - Salmon Roe with soy, Yuzu skin and butter on baquette
-  - Pyrennes spicy garlic mushroom melody in endive wrap
-  - Oyster, ginger blossom and horseradish bits
-  - Jamon Iberico
-  - Smoked Salmon, pickled mushroom and egg yolk
-  - Cava Rosat AVINYO Brut Reserva
+  - title: Intermission
+    items:
+    - KIDS-HEAL short film
+    - Portland Junior Philharmonic  string Quartet
+    - Sparkling Satori Sake Surprise
+    - Sake, sparkling wine, ginger syrup with house pickled wild Mirabelle plum.
 
-- title: First Seating
-  - Salad of angulas with seaweed and ginger on bed of nappa cabbage
-  - Usuzukuri Flounder, poached monkfish liver, bok choy and citrus
-  - Bacalao kasuzuke with preserved chestnut miso and braised chard
-  - Basque cider
-  - Garbanzos, diced mortzilla stir fried with golden raisins and toasted almond
-  - Basque Skatewing with grilled onion, peppers and smoked sasify
-  - Fremin Etxaniz Txacoli 2014
+  - title: Second Seating
+    items:
+    - Uncle Frank’s inFamous Solomo, garlic, pimenton and porkloin with roasted red pepper
+    - Patatak Patxi, new potatoes Etorki smoked sheep cheese béchamel with fresh peas
+    - The Commons Petit Classique beer
+    - Morikawa aMazing Mafa, funyu sweet & savory ginger & garlic chicken
+    - Breakside La Tormenta beer
+    - Garlic soup with flash fried Japanese parsley
+    - A5 Waqyu sukiyaki, whipped egg yolk and chrysanthemum
+    - Japanese tortilla with fried sardines
+    - Vintage sake
 
-- title: Intermission
-  - KIDS-HEAL short film
-  - Portland Junior Philharmonic  string Quartet
-  - Sparkling Satori Sake Surprise
-  - Sake, sparkling wine, ginger syrup with house pickled wild Mirabelle plum.
-
-- title: Second Seating
-  - Uncle Frank’s inFamous Solomo, garlic, pimenton and porkloin with roasted red pepper
-  - Patatak Patxi, new potatoes Etorki smoked sheep cheese béchamel with fresh peas
-  - The Commons Petit Classique beer
-  - Morikawa aMazing Mafa, funyu sweet & savory ginger & garlic chicken
-  - Breakside La Tormenta beer
-  - Garlic soup with flash fried Japanese parsley
-  - A5 Waqyu sukiyaki, whipped egg yolk and chrysanthemum
-  - Japanese tortilla with fried sardines
-  - Vintage sake
-
-- title: Tea Service and Dessert
-  - Buckwheat flan with black sugar, almond and dried fig
-  - Irrazabal smoked sheep cheese, cognac poached cherry filled opari
-  - Nodoguro custom pan roasted Houjicha green tea
-  - Stumptown coffee ala James Bond pour
-  - D’Oliveira, Vintage Madeira, 1957
-
+  - title: Tea Service and Dessert
+    items:
+    - Buckwheat flan with black sugar, almond and dried fig
+    - Irrazabal smoked sheep cheese, cognac poached cherry filled opari
+    - Nodoguro custom pan roasted Houjicha green tea
+    - Stumptown coffee ala James Bond pour
+    - D’Oliveira, Vintage Madeira, 1957
 ...
