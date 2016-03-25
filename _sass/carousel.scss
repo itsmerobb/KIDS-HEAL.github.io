@@ -1,0 +1,39 @@
+.carousel-outer {
+
+}
+
+.carousel-outer title {
+
+}
+
+.slick-carousel {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3) inset;
+}
+
+.slick-carousel a {
+  padding: 2px;
+  background-color: $black-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  margin: 20px 20px;
+}
+
+.slick-carousel img {
+  max-height: 200px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.slick-dots {
+
+}
+
+.slick-dots li button:before {
+  color: #fff !important;
+}
+
+/* .slick-prev:before, */
+/* .slick-next:before { */
+/*   font-size: 50px; */
+/*   width: 50px; */
+/*   height: 50px; */
+/* } */

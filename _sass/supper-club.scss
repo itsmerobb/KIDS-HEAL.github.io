@@ -1,0 +1,66 @@
+.supper-club-col {
+  background-color: #000;
+}
+
+.paper {
+  background-image: url("/img/supper-club/paper.png");
+  min-height: 1378px;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.supper-club-page {
+  text-shadow: none;
+  text-align: center;
+  color: #000;
+  h1 {
+    text-shadow: none;
+    padding-top: 30px;
+    .embellishment {
+      display: inline-block;
+      background-image: url("/img/supper-club/embellishment01.png");
+      width: 33px;
+      height: 19px;
+      margin: 0 8px;
+    }
+    .embellishment.left {
+      background-position: 0px 0;
+    }
+    .embellishment.right {
+      background-position: -33px 0;
+    }
+  }
+  h2 {
+    font-size: 16pt;
+    color: #000;
+    text-shadow: none;
+    .embellishment {
+      display: inline-block;
+      background-image: url("/img/supper-club/embellishment02.png");
+      width: 44px;
+      height: 15px;
+      margin: 0 8px;
+    }
+    .embellishment.left {
+      background-position: 0px 0;
+    }
+    .embellishment.right {
+      background-position: -44px 0;
+    }
+  }
+
+  .supper-club-series {
+    padding: 30px;
+  }
+
+  p, li {
+    font-size: 12pt;
+    text-shadow: none;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+
+}
