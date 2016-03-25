@@ -28,8 +28,14 @@
      ]
      }'>
   {% for x in include.data %}
-  <a class=="" href="#">
-    <img src="{{ x.thumb }}" alt="...">
+  <a href="#"
+     data-toggle="modal"
+     data-target="{{ include.target }}"
+     data-title="{{ x.title }}"
+     data-url="{{ x.url }}"
+     data-width="{{ x.width }}"
+     data-height="{{ x.height }}">
+    <img src="{{ x.thumb }}" alt="{{ x.title }}">
   </a>
   {% endfor %}
 </div>

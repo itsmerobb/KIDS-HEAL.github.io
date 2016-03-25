@@ -33,11 +33,13 @@ body {
   font-size: 16pt;
   font-family: 'Roboto Condensed', sans-serif;
   text-shadow: 1px 1px rgba(0, 0, 0, .4);
+//  background-image: url("/img/textures/Jade_cloth_pxr128.jpg");
+//  background-image: url("/img/textures/Red_velvet_pxr128.jpg");
 }
 
 .container {
   background-color: $blue-color;
-  box-shadow: 0 0 30px rgba(0, 0, 0, .35);
+  box-shadow: 0 0 60px rgba(0, 0, 0, .8);
 }
 
 .navbar-brand>img {
@@ -170,6 +172,10 @@ body {
   padding-right: 50px;
   padding-bottom: 20px;
   border-bottom: 1px dashed $white-color-dark;
+  //background-color: $blue-color;
+  //margin-bottom: 20px;
+  //border-radius: 10px;
+  //box-shadow: 0 0 50px rgba(0, 0, 0, .5);
 }
 
 .section h2 {
@@ -272,5 +278,6 @@ address {
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "carousel",
-  "supper-club"
+  "supper-club",
+  "modal"
 ;
