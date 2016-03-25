@@ -65,3 +65,36 @@
   }
 
 }
+
+.seatings {
+
+  font-family: 'EB Garamond', serif;
+  background-color: $black-color;
+  text-align: center;
+  padding: 10px 0;
+
+  .seating-box{
+    background-color: #1c4756;
+    width: 739px;
+    margin: 0 auto;
+    padding: 25px;
+  }
+
+  h1 {
+    color: $yellow-color;
+  }
+
+  h2 {
+    margin: 5px 20px 30px 20px;
+  }
+
+  .row {
+    margin: 20px 0;
+  }
+
+  .sold-out {
+    text-transform: uppercase;
+    color: #ff0000;
+    font-weight: 700;
+  }
+}
