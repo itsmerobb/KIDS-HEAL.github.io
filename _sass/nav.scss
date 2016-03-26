@@ -39,12 +39,21 @@
 .navbar-custom .navbar-nav > li > a {
   color: $purple-color;
   background-color: $yellow-color;
-  margin: 10px 5px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.5) inset;
+//  margin: 10px 5px;
+//  border-radius: 10px;
+  //box-shadow: 0 0 10px rgba(0,0,0,.5) inset;
   text-transform: uppercase;
   text-shadow: 1px 1px rgba(0, 0, 0, .2);
 }
+
+.navbar-custom .navbar-nav > ul > li:first-child > a {
+    border-radius: 10px 0 0 10px;
+}
+
+.navbar-custom .navbar-nav > li:last-child > a {
+//    border-radius: 0 10px 10px 0;
+}
+
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
   color: $pink-color;

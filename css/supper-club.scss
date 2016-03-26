@@ -5,8 +5,25 @@ body {
     background-image: url("/img/textures/Red_velvet_pxr128.jpg");
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .container {
     background-color: #000;
+}
+
+.reservations-box {
+    font-family: 'EB Garamond', serif;
+    font-size: 20pt;
+    background-color: #222222;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ffff66;
+    border-bottom: 1px solid #ffff66;
+    a {
+        color: #ffff33;
+    }
 }
 
 .supper-club-col {
@@ -94,21 +111,26 @@ body {
   font-family: 'EB Garamond', serif;
   background-color: #000;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 
   .seating-box{
     background-color: #1c4756;
     width: 739px;
     margin: 0 auto;
     padding: 25px;
+    //border-radius: 5px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, .2) inset;
   }
 
   h1 {
+      font-family: 'EB Garamond', serif;
       color: #ff0000; //$yellow-color;
   }
 
   h2 {
-    margin: 5px 20px 30px 20px;
+      font-family: 'EB Garamond', serif;
+      margin: 5px 20px 30px 20px;
+      font-size: 18pt;
   }
 
   .row {
