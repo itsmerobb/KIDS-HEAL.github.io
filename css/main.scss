@@ -3,54 +3,9 @@
 ---
 @charset "utf-8";
 
+@import "colors";
+
 $screen-sm-min: 768px;
-
-$black-color  : #000000;
-$white-color  : #ffffff;
-$green-color  : #8cc63f;
-$blue-color   : #00b4f1;
-$yellow-color : #ffec00;
-$purple-color : #3b0096;
-$pink-color   : #f286af;
-$orange-color : #f58220;
-
-$white-color-light  : lighten($white-color,  40%);
-$white-color-dark   :  darken($white-color,  5%);
-$green-color-light  : lighten($green-color,  40%);
-$green-color-dark   :  darken($green-color,  5%);
-$blue-color-light   : lighten($blue-color,   40%);
-$blue-color-dark    :  darken($blue-color,   5%);
-$yellow-color-light : lighten($yellow-color, 40%);
-$yellow-color-dark  :  darken($yellow-color, 5%);
-$purple-color-light : lighten($purple-color, 40%);
-$purple-color-dark  :  darken($purple-color, 5%);
-$pink-color-light    : lighten($pink-color,  40%);
-$pink-color-dark     :  darken($pink-color,  5%);
-$orange-color-light : lighten($orange-color, 40%);
-$orange-color-dark  :  darken($orange-color, 5%);
-
-// $blue-color      : #038ddc;
-   $blue-color-dark : #0081c4;
-   $blue-color-darker  : #005b8a;
-   $blue-color-light   : #67c1f0;
-   $green-color        : #8cc63f;
-   $green-color-dark   : #6b9831;
-   $green-color-darker : #466320;
-   $green-color-light  : #badd8c;
-   $yellow-color       : #ffec00;
-   $yellow-color-dark  : #c4b300;
-   $yellow-color-darker  : #807500;
-   $yellow-color-light   : #fff466;
-   $orange-color         : #f58220;
-   $orange-color-dark    : #bc6318;
-   $orange-color-darker  : #7b4110;
-   $orange-color-light   : #f9b479;
-   $pink-color           : #f286af;
-   $pink-color-dark      : #ba6786;
-   $pink-color-darker    : #794358;
-   $pink-color-light     : #f7b6cf;
-   $purple-color         : #3b0096;
-   $red-color            : #f52020;
 
 body {
   background-color: $green-color;
@@ -59,7 +14,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   text-shadow: 1px 1px rgba(0, 0, 0, .3);
 //  background-image: url("/img/textures/Jade_cloth_pxr128.jpg");
-//  background-image: url("/img/textures/Red_velvet_pxr128.jpg");
 }
 
 .container {
@@ -81,6 +35,7 @@ h2 {
 }
 
 h3 {
+    color: $orange-color;
     font-family: 'Boogaloo', cursive;
     font-size: 20pt;
     text-transform: capitalize;
@@ -92,10 +47,13 @@ p {
     margin-left: 15px;
 }
 
+a {
+    color: $orange-color;
+}
 
 .section {
   padding-bottom: 20px;
-  border-bottom: 1px dashed $white-color-dark;
+  border-bottom: 1px dashed $white-color;
   //background-color: $blue-color;
   //margin-bottom: 20px;
   //border-radius: 10px;
@@ -165,10 +123,14 @@ p {
   text-shadow: 2px 2px rgba(0, 0, 0, .4);
   padding: 10px 30px;
   background-color: $orange-color;
-  border: 2px solid $orange-color-dark;
+  border: 1px solid $orange-color-dark;
   box-shadow: 0 0 30px rgba(0, 0, 0, .25);
   margin: 40px 0;
-  background-image: linear-gradient(to right, $orange-color-dark 10%, $orange-color 50%, $orange-color-dark 90%);
+//  background-image: linear-gradient(to right, $orange-color-dark 0%, $orange-color 2%, $orange-color 98%, $orange-color-dark 100%);
+}
+
+.donate-page .row {
+    margin-bottom: 20px;
 }
 
 .donate {
@@ -179,15 +141,41 @@ p {
   p {
       color: $black-color;
       margin: 0 0 20px 0;
-
   }
-}
-
-.donate-btn {
 }
 
 address {
   width: 200px;
+}
+
+.frank-note {
+    color: $black-color;
+    background-color: $yellow-color-light;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25);
+    padding: 20px 50px;
+    text-shadow: none;
+    margin: 30px 0;
+
+    h3 {
+        margin-left: 0;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    .sign {
+        margin-right: 50px;
+        margin-bottom: 30px;
+
+        p {
+            margin: 0;
+        }
+
+        .name {
+            font-size: 28pt;
+        }
+    }
 }
 
 .site-footer {
@@ -204,6 +192,5 @@ address {
 @import
   "nav",
   "carousel",
-  "supper-club",
   "modal"
 ;

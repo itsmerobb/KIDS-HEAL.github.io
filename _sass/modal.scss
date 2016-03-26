@@ -4,6 +4,10 @@
 
     .modal-header {
       background-color: $blue-color-dark;
+
+      button.close {
+        color: $white-color;
+      }
     }
 
     .modal-body {

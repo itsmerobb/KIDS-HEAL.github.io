@@ -1,5 +1,7 @@
 ---
 layout: default
+css:
+  -  /css/supper-club.css
 fonts:
   - "https://fonts.googleapis.com/css?family=EB+Garamond"
 ---
@@ -27,10 +29,9 @@ fonts:
       <div class="supper-club-menu paper">
         <h1><span class="embellishment left"></span>{{ menu.title }}<span class="embellishment right"> </span></h1>
         <h2>{{ menu.desc }}</h2>
-        <p>{{ menu.chef.name }}</p>
-        <p>{{ menu.chef.desc }}</p>
-        <p>{{ menu.other1 }}</p>
-        <p>{{ menu.other2 }}</p>
+        {% for x in menu.participants %}
+        <p>{{ x }}</p>
+        {% endfor %}
         {% for c in menu.courses %}
         <h2><span class="embellishment left"></span>{{ c.title }}<span class="embellishment right"> </span></h2>
         <ul>

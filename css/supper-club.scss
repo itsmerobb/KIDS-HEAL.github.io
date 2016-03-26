@@ -1,6 +1,24 @@
+---
+---
+
+body {
+    background-image: url("/img/textures/Red_velvet_pxr128.jpg");
+}
+
+.container {
+    background-color: #000;
+}
+
 .supper-club-col {
   background-color: #000;
   font-family: 'EB Garamond', serif;
+  padding-bottom: 30px;
+
+  h2 {
+      font-family: 'EB Garamond', serif;
+      text-transform: none;
+      font-size: 20pt;
+  }
 }
 
 .paper {
@@ -69,7 +87,7 @@
 .seatings {
 
   font-family: 'EB Garamond', serif;
-  background-color: $black-color;
+  background-color: #000;
   text-align: center;
   padding: 10px 0;
 
@@ -81,7 +99,7 @@
   }
 
   h1 {
-    color: $yellow-color;
+      color: #ff0000; //$yellow-color;
   }
 
   h2 {
