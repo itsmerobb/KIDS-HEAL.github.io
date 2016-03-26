@@ -18,4 +18,20 @@ $(document).ready(function(){
     //modal.find('.modal-body .video-embed').attr("width",width)
     //modal.find('.modal-body .video-embed').attr("height",height)
   });
+
+  $('.modal').on('shown.bs.modal', function () {
+      var modal = $(this);
+      var $iframe = modal.find('.modal-body .media-embed');
+      var contentWindow = $iframe[0].contentWindow;
+      var targetOriginUrl = $iframe.attr('src').split('?')[0];
+      contentWindow.postMessage({ 'method': 'play' }, targetOriginUrl);
+  });
+
+  $('.modal').on('hidden.bs.modal', function () {
+      var modal = $(this);
+      var $iframe = modal.find('.modal-body .media-embed');
+      var contentWindow = $iframe[0].contentWindow;
+      var targetOriginUrl = $iframe.attr('src').split('?')[0];
+      contentWindow.postMessage({ 'method': 'pause' }, targetOriginUrl);
+  });
 });
