@@ -1,11 +1,10 @@
 ---
 title : "BASQUE’ANESE #1"
 desc  : (Half Basque, half Japanese meal. Take one.)
-chef  :
-  name: Ryan Roadhouse
-  desc: Owner/chef Nodoguro, Portland Resturant of the Year 2015
-other1 : Patxi Etxaniz – serial venture philanthropist/artist/cook
-other2 : "Kitchen Cru – Portland's #1 culinary arts incubator"
+participants :
+  - Ryan Roadhouse – Owner/chef Nodoguro, Portland Resturant of the Year 2015
+  - Patxi Etxaniz – serial venture philanthropist/artist/cook
+  - "Kitchen Cru – Portland's #1 culinary arts incubator"
 courses:
   - title: Pintxos
     items:
