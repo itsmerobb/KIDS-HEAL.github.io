@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    background-color: #000;
+  background-color: #222222;
 }
 
 .reservations-box {
@@ -123,21 +123,38 @@ body {
   padding: 20px 0;
 
   .seating-box{
-    background-color: #1c4756;
-    width: 739px;
+    background-color: $black-color;
+    width: 731px;
     margin: 0 auto;
-    padding: 25px;
-    //border-radius: 5px;
-    box-shadow: 0 0 50px rgba(255, 255, 255, .2) inset;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .8) inset;
+    border: 1px solid #888888;
+
+    h2{
+      font-size: 18pt;
+      font-weight: 500;
+      margin: 10px;
+    }
+
+    img {
+      background-color: #1c4756;
+      padding: 40px 20px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, .3) inset;
+    }
   }
 
   h1 {
     font-family: 'EB Garamond', serif;
-    color: #ff0000; //$yellow-color;
+    color: $red-color;
     background-image: url("/img/supper-club/GDSC_red.png");
-    width: 389px;
-    height: 22px;
-    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    background-color: #222222;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ffff66;
+    border-bottom: 1px solid #ffff66;
   }
 
   h2 {
@@ -166,11 +183,5 @@ body {
     text-transform: uppercase;
     color: #ff0000;
     font-weight: 700;
-  }
-
-  .seating-box h2{
-    font-size: 18pt;
-    font-weight: 500;
-    margin: 5px 20px 30px 20px;
   }
 }
