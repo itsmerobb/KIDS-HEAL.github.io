@@ -132,19 +132,30 @@ body {
   }
 
   h1 {
-      font-family: 'EB Garamond', serif;
-      color: #ff0000; //$yellow-color;
-      //background-image: url("/img/supper-club/GDSC_menu.png");
-      //background-color: $yellow-color;
-      //width: 389px;
-      //height: 22px;
+    font-family: 'EB Garamond', serif;
+    color: #ff0000; //$yellow-color;
+    background-image: url("/img/supper-club/GDSC_red.png");
+    width: 389px;
+    height: 22px;
+    margin-bottom: 30px;
   }
 
   h2 {
-      font-family: 'EB Garamond', serif;
-      margin: 5px 20px 30px 20px;
-      font-size: 18pt;
-      text-transform: capitalize;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 0;
+    font-size: 24pt;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .nights {
+    font-size: 18pt;
+    font-weight: 700;
+    margin-bottom: 30px;
   }
 
   .row {
@@ -155,5 +166,11 @@ body {
     text-transform: uppercase;
     color: #ff0000;
     font-weight: 700;
+  }
+
+  .seating-box h2{
+    font-size: 18pt;
+    font-weight: 500;
+    margin: 5px 20px 30px 20px;
   }
 }
