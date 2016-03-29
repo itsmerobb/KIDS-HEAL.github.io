@@ -22,6 +22,7 @@ fonts:
         <h1 class="text-hide">Golden Door Supper Club Series</h1>
         {% for d in series.dinners %}
         <h2>{{ d.title }}</h2>
+        <p><i>{{ d.sub }}</i></p>
         <ul>
           {% for x in d.info %}
           <li>{{ x }}</li>
