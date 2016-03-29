@@ -8,17 +8,12 @@
 $screen-sm-min: 768px;
 
 body {
-  background-color: $green-color;
+  background-color: $blue-color;
   color: $white-color;
   font-size: 16pt;
   font-family: 'Roboto Condensed', sans-serif;
   text-shadow: 1px 1px rgba(0, 0, 0, .3);
 //  background-image: url("/img/textures/Jade_cloth_pxr128.jpg");
-}
-
-.container {
-  background-color: $blue-color;
-  box-shadow: 0 0 60px rgba(0, 0, 0, .8);
 }
 
 // https://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685
