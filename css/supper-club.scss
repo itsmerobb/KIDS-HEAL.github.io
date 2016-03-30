@@ -135,6 +135,7 @@ body {
       font-size: 18pt;
       font-weight: 500;
       margin: 10px;
+      text-transform: capitalize;
     }
 
     img {
@@ -148,12 +149,6 @@ body {
     font-family: 'EB Garamond', serif;
     color: $red-color;
     height: 40px;
-    background-color: #222222;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-top: 1px solid #ffff66;
-    border-bottom: 1px solid #ffff66;
   }
 
   h1.supper-club-title {
@@ -165,9 +160,7 @@ body {
   h2 {
     font-family: 'EB Garamond', serif;
     margin-bottom: 0;
-    font-size: 24pt;
-    text-transform: capitalize;
-    font-weight: 700;
+    font-size: 18pt;
   }
 
   p {
