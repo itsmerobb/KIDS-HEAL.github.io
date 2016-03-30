@@ -4,11 +4,11 @@
 @import "colors";
 
 body {
-    background-image: url("/img/textures/Red_velvet_pxr128.jpg");
+  background-image: url("/img/textures/Red_velvet_pxr128.jpg");
 }
 
 .navbar {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .container {
@@ -16,16 +16,16 @@ body {
 }
 
 .reservations-box {
-    font-family: 'EB Garamond', serif;
-    font-size: 20pt;
-    background-color: #222222;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-top: 1px solid #ffff66;
-    border-bottom: 1px solid #ffff66;
-    a {
-        color: #ffff33;
-    }
+  font-family: 'EB Garamond', serif;
+  font-size: 20pt;
+  background-color: #222222;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ffff66;
+  border-bottom: 1px solid #ffff66;
+  a {
+    color: #ffff33;
+  }
 }
 
 .supper-club-col {
@@ -35,9 +35,9 @@ body {
   width: 585px;
 
   h2 {
-      font-family: 'EB Garamond', serif;
-      text-transform: none;
-      font-size: 20pt;
+    font-family: 'EB Garamond', serif;
+    text-transform: none;
+    font-size: 20pt;
   }
 }
 
@@ -112,9 +112,9 @@ body {
   }
 
   .note {
-      p{
-          text-align: left;
-      }
+    p{
+      text-align: left;
+    }
   }
 }
 
@@ -185,5 +185,5 @@ body {
 }
 
 .flags {
-    margin-top: 30px;
+  margin-top: 30px;
 }
