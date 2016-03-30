@@ -147,9 +147,6 @@ body {
   h1 {
     font-family: 'EB Garamond', serif;
     color: $red-color;
-    background-image: url("/img/supper-club/GDSC_red.png");
-    background-repeat: no-repeat;
-    background-position: center;
     height: 40px;
     background-color: #222222;
 
@@ -157,6 +154,12 @@ body {
     margin-bottom: 10px;
     border-top: 1px solid #ffff66;
     border-bottom: 1px solid #ffff66;
+  }
+
+  h1.supper-club-title {
+    background-image: url("/img/supper-club/GDSC_red.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   h2 {
