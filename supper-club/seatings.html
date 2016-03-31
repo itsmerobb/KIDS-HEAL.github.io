@@ -1,9 +1,9 @@
 ---
 layout: default
 css-post:
-  -  /css/supper-club.css
+-  /css/supper-club.css
 fonts:
-  - "https://fonts.googleapis.com/css?family=EB+Garamond"
+- "https://fonts.googleapis.com/css?family=EB+Garamond"
 
 chap-red-color       : "#ff0000"
 chap-orange-color    : "#ffb947"
@@ -65,19 +65,19 @@ kh-pink-color        : "#ff0080"
   </div>
   <div class="row">
     <div class="col-md-12">
-        <div class="supper-club-series paper center-block">
-          <h1 class="text-hide">Golden Door Supper Club Series</h1>
-          {% for d in series.dinners %}
-          <h2>{{ d.title }}</h2>
-          <p><i>{{ d.sub }}</i></p>
-          <ul>
-            {% for x in d.info %}
-            <li>{{ x }}</li>
-            {% endfor %}
-          </ul>
+      <div class="supper-club-series paper center-block">
+        <h1 class="text-hide">Golden Door Supper Club Series</h1>
+        {% for d in series.dinners %}
+        <h2>{{ d.title }}</h2>
+        <p><i>{{ d.sub }}</i></p>
+        <ul>
+          {% for x in d.info %}
+          <li>{{ x }}</li>
           {% endfor %}
-          <img src="/img/supper-club/flags.png" class="flags"/>
-        </div>
-        </div>
+        </ul>
+        {% endfor %}
+        <img src="/img/supper-club/flags.png" class="flags"/>
+      </div>
+    </div>
   </div>
 </div>
