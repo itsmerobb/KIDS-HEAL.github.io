@@ -9,8 +9,10 @@ js:
 ---
 <div class="row">
   <div class="col-md-12">
+    <!--
     <h2>About KIDS-HEAL</h2>
     {% include carousel.html data=site.data.about target="#imageModal" %}
+    -->
     <h2>Educational Films</h2>
     <h3>Episodes</h3>
     {% include carousel.html data=site.data.films.episodes target="#videoModal" %}
@@ -19,8 +21,10 @@ js:
     <h2>Artwork</h2>
     <h3>Skeleton Drawings</h3>
     {% include carousel.html data=site.data.art.skeletons target="#imageModal" %}
+    <!--
     <h2>Voices</h2>
     {% include carousel.html data=site.data.voices target="#imageModal" %}
+    -->
     {% include video-modal.html id="videoModal" %}
     {% include image-modal.html id="imageModal" %}
   </div>
