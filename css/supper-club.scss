@@ -4,7 +4,7 @@
 @import "colors";
 
 body {
-  background-color: #680000;
+  background-color: $supper-club-bg;
 }
 
 .supper-club-page {
@@ -23,7 +23,7 @@ body {
     border-bottom: 1px solid #ffff66;
     box-shadow: 0 0 5px;
     a {
-      color: #ffff33;
+      color: ffff33;
     }
   }
 
@@ -108,23 +108,37 @@ body {
     padding: 0;
   }
 
-  .note {
-    p{
-      text-align: left;
-    }
-  }
-
   .flags {
     margin-top: 30px;
     margin-bottom: 0;
     box-shadow: none;
+  }
+
+  .the-forgotten-corner {
+    background-color: #4a0200;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 0px 20px;
+    h1 {
+      font-family: 'EB Garamond', serif;
+      color: $yellow-color;
+      padding: 0;
+      margin: 15px 0 15px 0;
+    }
+
+    p{
+      color: #ffffff;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-left: 0;
+      font-size: 14pt;
+      text-align: left;
+    }
   }
 }
 
 .seatings {
 
   font-family: 'EB Garamond', serif;
-  margin-bottom: 50px;
 
   .row {
     margin: 20px 0;
@@ -216,4 +230,63 @@ body {
     color: #ff0000;
     font-weight: 700;
   }
+
+  .paper {
+    width: 560px;
+    background-image: url("/img/supper-club/paper_small.png");
+    min-height: 1000px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .supper-club-series {
+    font-family: 'EB Garamond', serif;
+    text-shadow: none;
+    text-align: center;
+    color: #000;
+
+    padding: 30px;
+
+    h1 {
+      background-image: url("/img/supper-club/GDSC_series.png");
+      width: 268px;
+      height: 52px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      text-shadow: none;
+      padding-top: 30px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 20pt;
+      text-transform: none;
+      color: #000;
+      text-shadow: none;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 12pt;
+      text-shadow: none;
+      margin-left: 0;
+    }
+
+    ul{
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .flags {
+      margin-top: 30px;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+
+  }
+
 }

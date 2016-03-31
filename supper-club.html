@@ -16,27 +16,20 @@ fonts:
   <div class="row">
     <div class="col-md-6">
       <div class="col-1 pull-right">
+
         <img alt="Golden Door Supper Club"
              src="img/supper-club/golden_door01.png"
              class="img-responsive center-block">
-        <div class="supper-club-series paper">
-          <h1 class="text-hide">Golden Door Supper Club Series</h1>
-          {% for d in series.dinners %}
-          <h2>{{ d.title }}</h2>
-          <p><i>{{ d.sub }}</i></p>
-          <ul>
-            {% for x in d.info %}
-            <li>{{ x }}</li>
-            {% endfor %}
-          </ul>
-          {% endfor %}
-          <div class="note">{{ series.note | markdownify }}</div>
-          <img src="/img/supper-club/flags.png" class="flags"/>
-        </div>
+
+        <img alt="Golden Door Supper Club"
+             src="img/supper-club/golden_door02.jpg"
+             class="img-responsive center-block">
+
       </div>
     </div>
     <div class="col-md-6">
       <div class="col-2 pull-left">
+
         <div class="supper-club-menu paper">
           <h1><span class="embellishment left"></span>{{ menu.title }}<span class="embellishment right"> </span></h1>
           <h2>{{ menu.desc }}</h2>
@@ -53,9 +46,8 @@ fonts:
           {% endfor %}
           <img src="/img/supper-club/flags.png" class="flags"/>
         </div>
-        <img alt="Golden Door Supper Club"
-             src="img/supper-club/golden_door02.jpg"
-             class="img-responsive center-block">
+
+        <div class="the-forgotten-corner">{{ series.note | markdownify }}</div>
       </div>
     </div>
   </div>
