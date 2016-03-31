@@ -1,0 +1,17 @@
+---
+- title     : The Forgotten Corner of Oregon
+  thumb     : /img/forgotten-corner-map.png
+  thumb-alt : "Map showing The Forgotten Corner of Oregon."
+  show-html : forgotten-corner.html
+
+- title     : Mission
+  thumb     : /img/gumbycrop1-250x354.jpg
+  thumb-alt : "A child paints."
+  show-html : mission.html
+
+- title     : Budget & Four-Year Plan
+  show-html : budget.html
+
+- title     : Goals & Accomplishments
+  show-html : goals-and-accomplishments.html
+...

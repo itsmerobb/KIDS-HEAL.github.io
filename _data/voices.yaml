@@ -1,0 +1,15 @@
+---
+- title     : A Special Thanks
+  show-html : special-thanks.html
+
+- title     : Business Supporters & Individual Donors
+  show-html : supporters.html
+
+- title     : Founder
+  thumb     : /img/Frank.jpg
+  thumb-alt : Frank Etxaniz
+  show-html : founder.html
+
+- title     : A Note From Frank
+  show-html : note-from-frank.html
+...

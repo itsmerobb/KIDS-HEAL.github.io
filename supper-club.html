@@ -14,45 +14,49 @@ fonts:
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 supper-club-col">
-      <img alt="Golden Door Supper Club"
-           src="img/supper-club/golden_door01.jpg"
-           class="img-responsive center-block">
-      <div class="supper-club-series paper">
-        <h1 class="text-hide">Golden Door Supper Club Series</h1>
-        {% for d in series.dinners %}
-        <h2>{{ d.title }}</h2>
-        <p><i>{{ d.sub }}</i></p>
-        <ul>
-          {% for x in d.info %}
-          <li>{{ x }}</li>
+    <div class="col-md-6">
+      <div class="col-1 pull-right">
+        <img alt="Golden Door Supper Club"
+             src="img/supper-club/golden_door01.png"
+             class="img-responsive center-block">
+        <div class="supper-club-series paper">
+          <h1 class="text-hide">Golden Door Supper Club Series</h1>
+          {% for d in series.dinners %}
+          <h2>{{ d.title }}</h2>
+          <p><i>{{ d.sub }}</i></p>
+          <ul>
+            {% for x in d.info %}
+            <li>{{ x }}</li>
+            {% endfor %}
+          </ul>
           {% endfor %}
-        </ul>
-        {% endfor %}
-        <div class="note">{{ series.note | markdownify }}</div>
-        <img src="/img/supper-club/flags.png" class="flags"/>
+          <div class="note">{{ series.note | markdownify }}</div>
+          <img src="/img/supper-club/flags.png" class="flags"/>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 supper-club-col">
-      <div class="supper-club-menu paper">
-        <h1><span class="embellishment left"></span>{{ menu.title }}<span class="embellishment right"> </span></h1>
-        <h2>{{ menu.desc }}</h2>
-        {% for x in menu.participants %}
-        <p>{{ x }}</p>
-        {% endfor %}
-        {% for c in menu.courses %}
-        <h2><span class="embellishment left"></span>{{ c.title }}<span class="embellishment right"> </span></h2>
-        <ul>
-          {% for i in c.items %}
-          <li>{{ i }}</li>
+    <div class="col-md-6">
+      <div class="col-2 pull-left">
+        <div class="supper-club-menu paper">
+          <h1><span class="embellishment left"></span>{{ menu.title }}<span class="embellishment right"> </span></h1>
+          <h2>{{ menu.desc }}</h2>
+          {% for x in menu.participants %}
+          <p>{{ x }}</p>
           {% endfor %}
-        </ul>
-        {% endfor %}
-        <img src="/img/supper-club/flags.png" class="flags"/>
+          {% for c in menu.courses %}
+          <h2><span class="embellishment left"></span>{{ c.title }}<span class="embellishment right"> </span></h2>
+          <ul>
+            {% for i in c.items %}
+            <li>{{ i }}</li>
+            {% endfor %}
+          </ul>
+          {% endfor %}
+          <img src="/img/supper-club/flags.png" class="flags"/>
+        </div>
+        <img alt="Golden Door Supper Club"
+             src="img/supper-club/golden_door02.jpg"
+             class="img-responsive center-block">
       </div>
-      <img alt="Golden Door Supper Club"
-           src="img/supper-club/golden_door02.jpg"
-           class="img-responsive center-block">
     </div>
   </div>
 </div>

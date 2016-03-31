@@ -4,57 +4,45 @@
 @import "colors";
 
 body {
-  background-image: url("/img/textures/Red_velvet_pxr128.jpg");
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.container {
-  background-color: #222222;
-}
-
-.reservations-box {
-  font-family: 'EB Garamond', serif;
-  font-size: 20pt;
-  background-color: #222222;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-top: 1px solid #ffff66;
-  border-bottom: 1px solid #ffff66;
-  a {
-    color: #ffff33;
-  }
-}
-
-.supper-club-col {
-  background-color: #000;
-  font-family: 'EB Garamond', serif;
-  padding-bottom: 30px;
-  width: 585px;
-
-  h2 {
-    font-family: 'EB Garamond', serif;
-    text-transform: none;
-    font-size: 20pt;
-  }
-}
-
-.paper {
-  background-image: url("/img/supper-club/paper.png");
-  min-height: 1378px;
-  margin: 5px 0;
-  padding: 0;
+  background-color: #680000;
 }
 
 .supper-club-page {
+  font-family: 'EB Garamond', serif;
   text-shadow: none;
   text-align: center;
   color: #000;
+
+  .reservations-box {
+    font-family: 'EB Garamond', serif;
+    font-size: 20pt;
+    background-color: #222222;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ffff66;
+    border-bottom: 1px solid #ffff66;
+    box-shadow: 0 0 5px;
+    a {
+      color: #ffff33;
+    }
+  }
+
+  .paper {
+    background-image: url("/img/supper-club/paper.png");
+    min-height: 1378px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
   h1 {
     text-shadow: none;
     padding-top: 30px;
+    margin-top: 0px;
+
     .embellishment {
       display: inline-block;
       background-image: url("/img/supper-club/embellishment01.png");
@@ -69,8 +57,11 @@ body {
       background-position: -33px 0;
     }
   }
+
   h2 {
-    font-size: 16pt;
+    font-family: 'EB Garamond', serif;
+    font-size: 20pt;
+    text-transform: none;
     color: #000;
     text-shadow: none;
     .embellishment {
@@ -86,6 +77,12 @@ body {
     .embellishment.right {
       background-position: -44px 0;
     }
+  }
+
+  .col-1,
+  .col-2 {
+    margin: 15px 0;
+    width: 560px;
   }
 
   .supper-club-series {
@@ -116,20 +113,90 @@ body {
       text-align: left;
     }
   }
+
+  .flags {
+    margin-top: 30px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
 }
 
 .seatings {
 
   font-family: 'EB Garamond', serif;
-  background-color: #000;
-  text-align: center;
-  padding: 20px 0;
+  margin-bottom: 50px;
+
+  .row {
+    margin: 20px 0;
+  }
+
+  h1 {
+    font-family: 'EB Garamond', serif;
+    color: $red-color;
+    height: 40px;
+  }
+
+  h2 {
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 0;
+    font-size: 18pt;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .heading {
+    width: 731px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #4a0200;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .6) inset;
+
+    text-align: center;
+
+    h1 {
+      color: $white-color;
+      font-size: 22pt;
+      font-weight: 700;
+      margin: 8px 0 8px 0;
+    }
+
+    h2 {
+      margin: 8px 0 12px 0;
+      font-size: 18pt;
+      text-transform: none;
+      font-style: italic;
+      font-weight: 700;
+
+      .embellishment {
+        display: inline-block;
+        background-image: url("/img/supper-club/embellishment03.png");
+        width: 33px;
+        height: 19px;
+        margin: 0 8px;
+      }
+      .embellishment.left {
+        background-position: 0px 0;
+      }
+      .embellishment.right {
+        background-position: -33px 0;
+      }
+    }
+
+    .nights {
+      font-size: 18pt;
+      font-weight: 700;
+
+    }
+  }
 
   .seating-box{
     background-color: $black-color;
     width: 731px;
     margin: 0 auto;
     border: 1px solid #888888;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
 
     h2{
       font-size: 18pt;
@@ -145,45 +212,9 @@ body {
     }
   }
 
-  h1 {
-    font-family: 'EB Garamond', serif;
-    color: $red-color;
-    height: 40px;
-  }
-
-  h1.supper-club-title {
-    background-image: url("/img/supper-club/GDSC_red.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  h2 {
-    font-family: 'EB Garamond', serif;
-    margin-bottom: 0;
-    font-size: 18pt;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-
-  .nights {
-    font-size: 18pt;
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
-
-  .row {
-    margin: 20px 0;
-  }
-
   .sold-out {
     text-transform: uppercase;
     color: #ff0000;
     font-weight: 700;
   }
-}
-
-.flags {
-  margin-top: 30px;
 }
