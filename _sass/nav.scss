@@ -133,7 +133,7 @@
   color: $red-color;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $screen-sm-min) {
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     color: $purple-color;
   }
