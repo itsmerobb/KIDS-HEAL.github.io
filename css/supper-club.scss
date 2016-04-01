@@ -42,10 +42,18 @@ a {
     max-width: 560px;
   }
 
-  .paper {
-    background-image: url("/img/supper-club/paper.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  @media (min-width: $screen-sm-min) {
+    .paper {
+      background-image: url("/img/supper-club/paper.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .paper {
+      background-color: #fff7de;
+    }
   }
 
   img {
@@ -58,19 +66,21 @@ a {
       margin: 0;
       padding-top: 50px;
 
-      .embellishment {
-        display: inline-block;
-        width: 33px;
-        height: 19px;
-        margin: 0 8px;
-        background-image: url("/img/supper-club/embellishment01.png");
-        background-repeat: no-repeat;
-      }
-      .embellishment.left {
-        background-position: 0px 0;
-      }
-      .embellishment.right {
-        background-position: -33px 0;
+      @media (min-width: $screen-sm-min) {
+        .embellishment {
+          display: inline-block;
+          width: 33px;
+          height: 19px;
+          margin: 0 8px;
+          background-image: url("/img/supper-club/embellishment01.png");
+          background-repeat: no-repeat;
+        }
+        .embellishment.left {
+          background-position: 0px 0;
+        }
+        .embellishment.right {
+          background-position: -33px 0;
+        }
       }
     }
 
@@ -79,19 +89,21 @@ a {
       font-size: 16pt;
       font-weight: 700;
       color: #333333;
-      .embellishment {
-        display: inline-block;
-        width: 44px;
-        height: 15px;
-        margin: 0 8px;
-        background-image: url("/img/supper-club/embellishment02.png");
-        background-repeat: no-repeat;
-      }
-      .embellishment.left {
-        background-position: 0px 0;
-      }
-      .embellishment.right {
-        background-position: -44px 0;
+      @media (min-width: $screen-sm-min) {
+        .embellishment {
+          display: inline-block;
+          width: 44px;
+          height: 15px;
+          margin: 0 8px;
+          background-image: url("/img/supper-club/embellishment02.png");
+          background-repeat: no-repeat;
+        }
+        .embellishment.left {
+          background-position: 0px 0;
+        }
+        .embellishment.right {
+          background-position: -44px 0;
+        }
       }
     }
 
@@ -178,18 +190,21 @@ a {
     h2.dinner-title {
       margin: 20px 0 12px 0;
 
-      .embellishment {
-        display: inline-block;
-        background-image: url("/img/supper-club/embellishment03.png");
-        width: 33px;
-        height: 19px;
-        margin: 0 8px;
-      }
-      .embellishment.left {
-        background-position: 0px 0;
-      }
-      .embellishment.right {
-        background-position: -33px 0;
+      @media (min-width: $screen-sm-min) {
+
+        .embellishment {
+          display: inline-block;
+          background-image: url("/img/supper-club/embellishment03.png");
+          width: 33px;
+          height: 19px;
+          margin: 0 8px;
+        }
+        .embellishment.left {
+          background-position: 0px 0;
+        }
+        .embellishment.right {
+          background-position: -33px 0;
+        }
       }
     }
 
@@ -227,11 +242,19 @@ a {
     }
   }
 
-  .paper {
-    max-width: 560px;
-    background-image: url("/img/supper-club/paper_small.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  @media (min-width: $screen-sm-min) {
+    .paper {
+      max-width: 560px;
+      background-image: url("/img/supper-club/paper_small.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .paper {
+      background-color: #fff7de;
+    }
   }
 
   .supper-club-series {
