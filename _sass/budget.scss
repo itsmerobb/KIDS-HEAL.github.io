@@ -1,0 +1,20 @@
+.section .table-responsive {
+  font-size: 14pt;
+  padding: 10px 20px;
+}
+
+.section .table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: $blue-color-dark;
+}
+
+.section table thead th {
+  text-align: right;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border-top: 1px solid $blue-color-light;
+}
+
+.section table td {
+  text-align: right;
+}

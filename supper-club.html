@@ -32,10 +32,12 @@ fonts:
 
         <div class="supper-club-menu paper">
           <h1><span class="embellishment left"></span>{{ menu.title }}<span class="embellishment right"> </span></h1>
-          <h2>{{ menu.desc }}</h2>
-          {% for x in menu.participants %}
-          <p>{{ x }}</p>
-          {% endfor %}
+          <h2 class="menu-desc">{{ menu.desc }}</h2>
+          <ul class="menu-participants">
+            {% for x in menu.participants %}
+            <li>{{ x }}</li>
+            {% endfor %}
+          </ul>
           {% for c in menu.courses %}
           <h2><span class="embellishment left"></span>{{ c.title }}<span class="embellishment right"> </span></h2>
           <ul>
@@ -44,7 +46,7 @@ fonts:
             {% endfor %}
           </ul>
           {% endfor %}
-          <img src="/img/supper-club/flags.png" class="flags"/>
+          <img src="/img/supper-club/flags.png" class="flags img-responsive"/>
         </div>
 
         <div class="the-forgotten-corner">{{ series.note | markdownify }}</div>

@@ -1,3 +1,8 @@
+
+function myFunction(){
+  console.log("success");
+}
+
 $(document).ready(function(){
   $('.slick-carousel').slick();
 

@@ -28,7 +28,7 @@ kh-pink-color        : "#ff0080"
         <h1>(<span style="color: {{ page.kh-green-color }}">Health</span><span style="color: {{ page.kh-orange-color }}">Education</span><span style="color: {{ page.kh-blue-color }}">Arts</span><span style="color: {{ page.kh-pink-color }}">Laboratory</span>)</h1>
         <h2>thru</h2>
         <h1>Golden Door Supper Club</h1>
-        <h2><span class="embellishment left"></span>BASQUE'ANESE<span class="embellishment right"></span></h2>
+        <h2 class="dinner-title"><span class="embellishment left"></span>BASQUE'ANESE<span class="embellishment right"></span></h2>
         <p class="nights">3 nights only</p>
         <img src="/img/supper-club/embellishment04.png" />
         <p>For reservations, please email: <a href="mailto:GoldenDoorSupperClub@KIDS-HEAL.org">GoldenDoorSupperClub@KIDS-HEAL.org</a></p>
@@ -41,7 +41,7 @@ kh-pink-color        : "#ff0080"
       <div class="seating-box">
         <h2 class="pull-left">Friday, April 29th @ 7pm</h2>
         <h2 class="pull-right sold-out">SOLD OUT</h2>
-        <img src="/img/supper-club/seating01.png" />
+        <img src="/img/supper-club/seating01.png" class="img-responsive"/>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ kh-pink-color        : "#ff0080"
       <div class="seating-box">
         <h2 class="pull-left">Saturday, April 30th @ 7pm</h2>
         <h2 class="pull-right">18 seats available.</h2>
-        <img src="/img/supper-club/seating03.png" />
+        <img src="/img/supper-club/seating03.png" class="img-responsive"/>
       </div>
     </div>
   </div>
@@ -59,24 +59,24 @@ kh-pink-color        : "#ff0080"
       <div class="seating-box">
         <h2 class="pull-left">Sunday, May 1st @ 6pm</h2>
         <h2 class="pull-right">25 seats available.</h2>
-        <img src="/img/supper-club/seating02.png" />
+        <img src="/img/supper-club/seating02.png" class="img-responsive"/>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
       <div class="supper-club-series paper center-block">
-        <h1 class="text-hide">Golden Door Supper Club Series</h1>
+        <h1>Golden Door Supper Club Series</h1>
         {% for d in series.dinners %}
         <h2>{{ d.title }}</h2>
-        <p><i>{{ d.sub }}</i></p>
+        <h3>{{ d.sub }}</h3>
         <ul>
           {% for x in d.info %}
           <li>{{ x }}</li>
           {% endfor %}
         </ul>
         {% endfor %}
-        <img src="/img/supper-club/flags.png" class="flags"/>
+        <img src="/img/supper-club/flags.png" class="flags img-responsive center-block"/>
       </div>
     </div>
   </div>

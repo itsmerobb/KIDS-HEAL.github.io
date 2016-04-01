@@ -34,8 +34,10 @@
      ]
      }'>
   {% for x in include.data %}
+
   <a href="#"
-     data-toggle="modal"
+     onClick="myFunction(); return false;"
+     data-toggle="modalx"
      data-target="{{ include.target }}"
      data-title="{{ x.title }}"
      data-url="{{ x.url }}"
