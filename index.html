@@ -15,21 +15,14 @@ js:
     {% include carousel.html data=site.data.about target="#imageModal" %}
     -->
     <h2>Educational Films</h2>
-    <h3>Episodes</h3>
-    {% include carousel.html data=site.data.films.episodes target="#videoModal" %}
-    <span id="content-container"></span>
-
-
-    <h3>Segments</h3>
-    {% include carousel.html data=site.data.films.segments target="#videoModal" %}
+    {% include carousel.html title="Episodes" data=site.data.films.episodes type="video" %}
+    {% include carousel.html title="Segments" data=site.data.films.segments type="video" %}
     <h2>Artwork</h2>
-    <h3>Skeleton Drawings</h3>
-    {% include carousel.html data=site.data.art.skeletons target="#imageModal" %}
+    {% include carousel.html title="Skeletons" data=site.data.art.skeletons type="image" %}
+
     <!--
     <h2>Voices</h2>
     {% include carousel.html data=site.data.voices target="#imageModal" %}
     -->
-    {% include video-modal.html id="videoModal" %}
-    {% include image-modal.html id="imageModal" %}
   </div>
 </div>

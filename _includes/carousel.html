@@ -1,48 +1,30 @@
-<div class="slick-carousel" data-slick='{
-     "slidesToShow": 5,
-     "slidesToScroll": 5,
-     "dots": true,
-     "responsive": [
-     {
-     "breakpoint": 1300,
-     "settings": {
-     "slidesToShow": 4,
-     "slidesToScroll": 4
-     }
-     },
-     {
-     "breakpoint": 1000,
-     "settings": {
-     "slidesToShow": 3,
-     "slidesToScroll": 3
-     }
-     },
-     {
-     "breakpoint": 700,
-     "settings": {
-     "slidesToShow": 2,
-     "slidesToScroll": 2
-     }
-     },
-     {
-     "breakpoint": 480,
-     "settings": {
-     "slidesToShow": 1,
-     "slidesToScroll": 1
-     }
-     }
-     ]
-     }'>
-  {% for x in include.data %}
+<div class="carousel">
+  <div class="title">{{ include.title }}</div>
 
-  <a href="#"
-     data-toggle="modal"
-     data-target="{{ include.target }}"
-     data-title="{{ x.title }}"
-     data-url="{{ x.url }}"
-     data-width="{{ x.width }}"
-     data-height="{{ x.height }}">
-    <img src="{{ x.thumb }}" alt="{{ x.title }}">
-  </a>
-  {% endfor %}
+  <div class="slick-carousel">
+    {% for x in include.data %}
+    <div class="thumb">
+      <a href="#"
+         data-type="{{ include.type }}"
+         data-title="{{ x.title }}"
+         data-url="{{ x.url }}"
+         data-width="{{ x.width }}"
+         data-height="{{ x.height }}">
+        <img src="{{ x.thumb }}" alt="{{ x.title }}">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="drawer collapse">
+    <div class="drawer-header clearfix">
+      <a class="pull-right">
+        <span class="close-button glyphicon glyphicon-remove"
+              aria-hidden="true">
+        </span>
+    </div>
+    </a>
+    <div class="drawer-content">
+    </div>
+  </div>
 </div>

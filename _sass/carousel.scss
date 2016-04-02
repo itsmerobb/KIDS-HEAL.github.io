@@ -1,68 +1,108 @@
 
-.slick-carousel {
+.carousel {
+  padding: 0;
+  margin: 0;
+
+  .title {
+    margin-left: 15px;
+
+    color: $orange-color;
+
+    font-family: 'Boogaloo', cursive;
+    font-size: 20pt;
+
+    text-transform: capitalize;
+    text-shadow: 1px 1px rgba(0, 0, 0, .4);
+  }
+
+  .slick-carousel {
     background-color: #000;
     padding: 6px;
-}
 
-.slick-carousel a {
-  margin: 0 3px;
-  max-height: 166px;
-}
+    .thumb {
+      padding: 0;
+      margin: 0;
 
-.slick-carousel img {
-  width: 100%;
-}
+      a {
+        display: block;
+        margin: 0 3px;
+        max-height: 166px;
 
-.slick-dots {
-  width: auto;
-  bottom: auto;
-  top: -45px;
-  right: 0;
-}
+        img {
+          width: 100%;
+        }
+      }
+    }
 
-.slick-dots li button:before {
-  padding: 0;
-  font-size: 15px;
-}
+    .slick-dots {
+      width: auto;
+      bottom: auto;
+      top: -45px;
+      right: 0;
+    }
 
-.slick-dots li.slick-active button:before {
-  color: $yellow-color !important;
-  opacity: 1;
-}
+    .slick-dots li button:before {
+      padding: 0;
+      font-size: 15px;
+    }
 
-.slick-dots li button:before {
-  color: $yellow-color-dark !important;
-  opacity: 1;
-}
+    .slick-dots li.slick-active button:before {
+      color: $yellow-color !important;
+      opacity: 1;
+    }
 
-.slick-prev,
-.slick-next {
-  font-size: 40px;
-  width: 40px;
-  height: 40px;
-  z-index: 99;
-}
+    .slick-dots li button:before {
+      color: $yellow-color-dark !important;
+      opacity: 1;
+    }
 
-.slick-next {
-  right: -25px;
-}
+    .slick-prev,
+    .slick-next {
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+      z-index: 99;
+    }
 
-.slick-prev {
-  left: -25px;
-}
+    .slick-next {
+      right: -25px;
+    }
 
-.slick-prev:before,
-.slick-next:before {
-  font-size: 40px;
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  color: $yellow-color-dark;
-}
+    .slick-prev {
+      left: -25px;
+    }
 
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-    color: $yellow-color;
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+      color: $yellow-color-dark;
+    }
+
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      color: $yellow-color;
+    }
+  }
+
+  .drawer {
+    width: 50%;
+    margin: 0 auto 30px auto;
+
+    a {
+
+    }
+
+    .drawer-content {
+      margin: 0 auto;
+
+      img {
+
+      }
+    }
+  }
 }
