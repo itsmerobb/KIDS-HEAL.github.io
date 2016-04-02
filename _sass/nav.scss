@@ -14,7 +14,16 @@
   background-image: url("/img/top_banner.jpg");
 
   .navbar-brand {
-    padding-top: 0;
+    padding: 0;
+    margin-right: 50px;
+    img {
+      box-shadow: 0 0 20px rgba(0,0,0,.5);
+    }
+
+    img:hover,
+    img:active {
+      box-shadow: none;
+    }
   }
 
   .navbar-toggle {
@@ -26,12 +35,23 @@
       font-size: 16pt;
       height: 70px;
       padding: 10px 0;
+      a {
+        border-radius: 12px;
+        border: 2px solid $yellow-color-light;
+        text-shadow: 1px 1px $white-color;
+        box-shadow: 0 0 20px rgba(0,0,0,.5);
+      }
+
+      a:hover,
+      a:active {
+        box-shadow: none;
+      }
     }
   }
 
   @media (max-width: $screen-sm-min) {
     .navbar-collapse {
-      margin-top: 25px;
+      margin-top: 20px;
       background-color: $yellow-color;
     }
   }
@@ -48,7 +68,7 @@
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
-  color: $pink-color;
+  color: $orange-color;
 }
 .navbar-custom .navbar-text {
   color: $purple-color;
@@ -59,7 +79,7 @@
 }
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
-  color: $red-color;
+  color: $orange-color;
   background-color: $yellow-color-light;
 }
 .navbar-custom .navbar-nav > li > .dropdown-menu {
@@ -70,7 +90,7 @@
 }
 .navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-custom .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: $red-color;
+  color: $orange-color;
   background-color: $yellow-color-light;
 }
 .navbar-custom .navbar-nav > li > .dropdown-menu > li > .divider {
@@ -79,19 +99,19 @@
 .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: $red-color;
+  color: $orange-color;
   background-color: $yellow-color-light;
 }
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: $red-color;
+  color: $orange-color;
   background-color: $yellow-color-light;
 }
 .navbar-custom .navbar-nav > .open > a,
 .navbar-custom .navbar-nav > .open > a:hover,
 .navbar-custom .navbar-nav > .open > a:focus {
-  color: $red-color;
+  color: $orange-color;
   background-color: $yellow-color-light;
 }
 .navbar-custom .navbar-toggle {
@@ -113,7 +133,7 @@
   color: $purple-color;
 }
 .navbar-custom .navbar-link:hover {
-  color: $red-color;
+  color: $orange-color;
 }
 
 @media (max-width: $screen-sm-min) {
@@ -122,12 +142,12 @@
   }
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: $red-color;
+    color: $orange-color;
   }
   .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: $red-color;
+    color: $orange-color;
     background-color: $yellow-color-light;
   }
 }
