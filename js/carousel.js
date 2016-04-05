@@ -35,6 +35,8 @@ $(document).ready(function(){
       slidesToShow: 5,
       slidesToScroll: 5,
       dots: true,
+      prevArrow: "<div class='carousel-prev'><span class='glyphicon glyphicon-chevron-left carousel-prev-icon' aria-hidden='true'></span></div>",
+      nextArrow: "<div class='carousel-next'><span class='glyphicon glyphicon-chevron-right carousel-next-icon' aria-hidden='true'></span></div>",
       responsive: [
         {
           breakpoint: 1300,

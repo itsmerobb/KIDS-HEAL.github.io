@@ -8,18 +8,20 @@ js:
   - "//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"
   - "/js/carousel.js"
 ---
-<div class="row">
-  <div class="col-md-12">
-    <h2>About KIDS-HEAL</h2>
-    {% include carousel.html title="" data=site.data.about type="html" %}
+<div class="main-page">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>KIDS-HEAL</h2>
+      {% include carousel.html title="About" data=site.data.about type="html" %}
 
-    <h2>Educational Films</h2>
-    {% include carousel.html title="Episodes" data=site.data.films.episodes type="video" %}
-    {% include carousel.html title="Segments" data=site.data.films.segments type="video" %}
-    <h2>Artwork</h2>
-    {% include carousel.html title="Skeletons" data=site.data.art.skeletons type="image" %}
+      <h2>Educational Films</h2>
+      {% include carousel.html title="Episodes" data=site.data.films.episodes type="video" %}
+      {% include carousel.html title="Segments" data=site.data.films.segments type="video" %}
+      <h2>Artwork</h2>
+      {% include carousel.html title="Skeletons" data=site.data.art.skeletons type="image" %}
 
-    <h2>Voices</h2>
-    {% include carousel.html title="" data=site.data.voices type="html" %}
+      <h2>Voices</h2>
+      {% include carousel.html title="Voices" data=site.data.voices type="html" %}
+    </div>
   </div>
 </div>
