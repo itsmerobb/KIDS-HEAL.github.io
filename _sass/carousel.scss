@@ -1,4 +1,8 @@
 
+html, body {
+    height: 100%;
+}
+
 .carousel {
   padding: 0;
   margin: 0;
@@ -90,17 +94,18 @@
   }
 
   .drawer {
-    width: 50%;
     margin: 0 auto 30px auto;
+    border: 1px solid #fff;
 
-    a {
-
+    .drawer-header {
+      background-color: #000;
+      border-bottom: 1px solid #fff;
     }
 
     .drawer-content {
       margin: 0 auto;
 
-      img {
+      iframe {
 
       }
     }

@@ -1,13 +1,13 @@
-.section .table-responsive {
+.budget .table-responsive {
   font-size: 14pt;
   padding: 10px 20px;
 }
 
-.section .table-striped>tbody>tr:nth-of-type(odd) {
+.budget .table-striped>tbody>tr:nth-of-type(odd) {
   background-color: $blue-color-dark;
 }
 
-.section table thead th {
+.budget table thead th {
   text-align: right;
 }
 
@@ -15,6 +15,6 @@
   border-top: 1px solid $blue-color-light;
 }
 
-.section table td {
+.budget table td {
   text-align: right;
 }
