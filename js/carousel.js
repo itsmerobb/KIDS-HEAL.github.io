@@ -1,10 +1,4 @@
-function loadVideoContent (carousel, drawer, title, url, width, height){
-  $(drawer).find('.drawer-content').html(
-      '<div class="embed-responsive embed-responsive-16by9"> \
-<iframe class="media-embed embed-responsive-item" \
-src="" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
-</div>');
-  $(drawer).find(".media-embed").attr("src", url);
+function maybeOpenDrawer (carousel, drawer){
   if($(drawer).is(":visible")){
   }
   else{
@@ -13,16 +7,26 @@ src="" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
   $('html,body').animate({scrollTop: $(carousel).offset().top}, "slow");
 }
 
-function loadImageContent (carousel, drawer, title, url, width, height){
-  $(drawer).find('.drawer-content').html("<img class='img-responsive' src='' />")
-  $(drawer).find(".drawer-content img").attr("src", url);
-  $(drawer).show();
-  $('html,body').animate({scrollTop: $(carousel).offset().top}, "slow");
-}
-
-function closeContent (target){
+function closeDrawer (target){
   $(target).hide();
   $(target).find('.drawer-content').html("");
+}
+
+function loadVideoContent (target, title, url, width, height){
+  target.html($('<div></div>', { class: 'embed-responsive embed-responsive-16by9' })
+              .append($('<iframe></iframe>', { class: 'media-embed embed-responsive-item',
+                                               src: url })
+                      .attr('webkitallowfullscreen','')
+                      .attr('mozallowfullscreen','')
+                      .attr('allowfullscreen','')));
+}
+
+function loadImageContent (target, title, url, width, height){
+  target.html($('<img />', { class: 'img-responsive', src: url, alt: title }));
+}
+
+function loadHTMLContent (target, title, url, width, height){
+  target.load(url.concat(" .container-fluid"));
 }
 
 $(document).ready(function(){
@@ -31,6 +35,8 @@ $(document).ready(function(){
       slidesToShow: 5,
       slidesToScroll: 5,
       dots: true,
+      prevArrow: "<div class='carousel-prev'><span class='glyphicon glyphicon-chevron-left carousel-prev-icon' aria-hidden='true'></span></div>",
+      nextArrow: "<div class='carousel-next'><span class='glyphicon glyphicon-chevron-right carousel-next-icon' aria-hidden='true'></span></div>",
       responsive: [
         {
           breakpoint: 1300,
@@ -70,6 +76,7 @@ $(document).ready(function(){
       var buttons  = carousel.find(".slick-carousel .thumb a");
       var drawer   = carousel.find(".drawer");
       var close    = drawer.find(".close-button");
+      var target   = drawer.find('.drawer-content');
 
       buttons.each(function (){
 
@@ -82,13 +89,25 @@ $(document).ready(function(){
         switch (button.data('type')) {
         case "video":
           button.click(function(){
-            loadVideoContent(carousel, drawer, title, url, width, height);
+            loadVideoContent(target, title, url, width, height);
+            $(drawer).css('max-width', width);
+            maybeOpenDrawer(carousel, drawer);
             return false;
           });
           break;
         case "image":
           button.click(function(){
-            loadImageContent(carousel, drawer, title, url, width, height);
+            loadImageContent(target, title, url, width, height);
+            $(drawer).css('max-width', '50%');
+            maybeOpenDrawer(carousel, drawer);
+            return false;
+          });
+          break;
+        case "html":
+          button.click(function(){
+            loadHTMLContent(target, title, url, width, height);
+            $(drawer).css('max-width', '100%');
+            maybeOpenDrawer(carousel, drawer);
             return false;
           });
           break;
@@ -96,7 +115,7 @@ $(document).ready(function(){
       });
 
       close.click(function(){
-        closeContent(drawer);
+        closeDrawer(drawer);
         return false;
       });
     }
