@@ -10,8 +10,10 @@
   url       : /html/mission.html
 
 - title     : Budget & Four-Year Plan
+  thumb     : /img/budget-thumb.jpg
   url       : /html/budget.html
 
 - title     : Goals & Accomplishments
+  thumb     : /img/goals-thumb.jpg
   url       : /html/goals-and-accomplishments.html
 ...
