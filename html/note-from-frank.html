@@ -6,8 +6,8 @@ css: /css/main.css
 <div class="row">
   <div class="col-md-1"></div>
   <div class="col-md-10">
+    <h2>{{ frank.note.title }}</h2>
     <div class="frank-note clearfix">
-      <h3>{{ frank.note.title }}</h3>
       {{ frank.note.body | markdownify }}
       <div class="sign pull-right">
         <p class="name">{{ frank.first-name }} {{ frank.last-name }}</p>
