@@ -108,6 +108,13 @@ html, body {
       right: 0;
     }
 
+    .carousel-prev:hover,
+    .carousel-prev:active,
+    .carousel-next:hover,
+    .carousel-next:active {
+      cursor: pointer;
+    }
+
     .carousel-prev-icon,
     .carousel-next-icon {
       position: absolute;
