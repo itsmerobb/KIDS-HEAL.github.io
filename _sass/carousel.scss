@@ -130,20 +130,30 @@ html, body {
   }
 
   .drawer {
+    position: relative;
     margin: 0 auto 30px auto;
-    border: 1px solid #fff;
+    padding: 30px 30px;
+    background-color: $blue-color;
 
-    .drawer-header {
-      background-color: #000;
-      border-bottom: 1px solid #fff;
+    h2 {
+      background-color: transparent;
+    }
+
+    .close-button {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      color: $white-color;
+      opacity: .8;
+    }
+
+    .close-button:hover,
+    .close-button:active {
+      opacity: 1;
     }
 
     .drawer-content {
       margin: 0 auto;
-
-      iframe {
-
-      }
     }
   }
 }
