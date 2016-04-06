@@ -134,6 +134,8 @@ html, body {
     margin: 0 auto 30px auto;
     padding: 30px 30px;
     background-color: $blue-color;
+    border: 2px solid $yellow-color;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 
     h2 {
       background-color: transparent;
