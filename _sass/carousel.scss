@@ -131,10 +131,10 @@ html, body {
       opacity: .5;
     }
 
-    .carousel-prev-icon:hover,
-    .carousel-prev-icon:active,
-    .carousel-next-icon:hover,
-    .carousel-next-icon:active {
+    .carousel-prev:hover .carousel-prev-icon,
+    .carousel-prev:active .carousel-prev-icon,
+    .carousel-next:hover .carousel-next-icon,
+    .carousel-next:hover .carousel-next-icon {
       cursor: pointer;
       opacity: 1;
     }
