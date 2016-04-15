@@ -35,7 +35,6 @@ html, body {
 
     .slick-list {
       margin: 0 25px;
-      padding: 6px 0;
     }
 
     .thumb {
@@ -45,11 +44,16 @@ html, body {
       a {
         display: block;
         margin: 0 3px;
-        max-height: 166px;
+        border: 6px solid $black-color;
 
         img {
           width: 100%;
         }
+      }
+
+      a:hover,
+      a:focus {
+        border: 6px solid $yellow-color;
       }
     }
 
