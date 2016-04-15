@@ -36,7 +36,8 @@
       height: 70px;
       padding: 10px 0;
       a {
-        border-radius: 12px;
+        padding: 12px 15px;
+        border-radius: 8px;
         border: 2px solid $yellow-color-light;
         text-shadow: 1px 1px $white-color;
         box-shadow: 0 0 20px rgba(0,0,0,.5);
@@ -45,6 +46,7 @@
       a:hover,
       a:active {
         box-shadow: none;
+        color: $red-color !important;
       }
     }
   }
@@ -117,10 +119,16 @@
 .navbar-custom .navbar-toggle {
   border-color: $yellow-color-light;
   background-color: $yellow-color;
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: $yellow-color-light;
+  box-shadow: none;
+}
+.navbar-custom .navbar-toggle:hover .icon-bar,
+.navbar-custom .navbar-toggle:focus .icon-bar{
+  background-color: $red-color;
 }
 .navbar-custom .navbar-toggle .icon-bar {
   background-color: $purple-color;
