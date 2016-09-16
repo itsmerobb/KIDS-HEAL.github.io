@@ -4,6 +4,7 @@
   <div class="slick-carousel">
     {% for x in include.data %}
     <div class="thumb">
+      {% if x.url %}
       <a href="#"
          data-type="{{ include.type }}"
          data-title="{{ x.title }}"
@@ -12,6 +13,11 @@
          data-height="{{ x.height }}">
         <img src="{{ x.thumb }}" alt="{{ x.title }}" />
       </a>
+      {% else %}
+      <div class="no-link">
+        <img src="{{ x.thumb }}" alt="{{ x.title }}" />
+      </div>
+      {% endif %}
     </div>
     {% endfor %}
   </div>
