@@ -41,7 +41,7 @@ html, body {
       padding: 0;
       margin: 0;
 
-      a {
+      a, div.no-link {
         display: block;
         margin: 0 3px;
         border: 6px solid $black-color;
