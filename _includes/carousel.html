@@ -6,7 +6,11 @@
     <div class="thumb">
       {% if x.url %}
       <a href="#"
-         data-type="{{ include.type }}"
+         data-type={% if x.type %}
+                   "{{ x.type }}"
+                   {% else %}
+                   "{{ include.type }}"
+                   {% endif %}
          data-title="{{ x.title }}"
          data-url="{{ x.url }}"
          data-width="{{ x.width }}"
